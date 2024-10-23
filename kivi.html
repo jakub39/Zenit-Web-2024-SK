@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kivi</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .kruh {
+        background-color: #3D550C;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        border-top-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        position: relative;
+      }
+      .stvorec1 {
+        background-color: #59981A;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+      }
+      .stvorec2 {
+        position: absolute;
+        background-color: #81B622;
+        width: 125px;
+        height: 125px;
+      }
+      .topleft {
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 25%;
+      }
+      .bottomright {
+        border-top-left-radius: 25%;
+        border-bottom-right-radius: 50%;
+        top: 250px;
+        left: 250px;
+      }
+      .topleft2 {
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 25%;
+      }
+      .bottomright2 {
+        border-top-left-radius: 25%;
+        border-bottom-right-radius: 50%;
+        top: 125px;
+        left: 125px;
+      }
+      .stvorec3 {
+        background-color: #ECF87F;
+        width: 62.5px;
+        height: 62.5px;
+      }
+      .bottomright3 {
+        border-top-left-radius: 25%;
+        border-bottom-right-radius: 50%;
+        top: 62.5px;
+        position: absolute;
+        left: 62.5px;
+      }
+    </style>
+</head>
+<body>
+    <div class="kruh">
+        <div class='stvorec1 topleft'>
+          <div class='stvorec2 bottomright2'>
+            <div class='stvorec3 topleft2'></div>
+          </div>  
+        </div>
+        <div class='stvorec1 bottomright'>
+          <div class='stvorec2 topleft2'>
+            <div class='stvorec3 bottomright3'>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

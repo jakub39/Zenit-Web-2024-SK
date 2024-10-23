@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+<body>
+    <div class="Pizza">
+        <div class="pizzaCircle">
+            <div class="line" style="transform: translate(-50%, -50%) rotate(0deg);"></div>
+            <div class="line" style="transform: translate(-50%, -50%) rotate(120deg);"></div>
+            <div class="line" style="transform: translate(-50%, -50%) rotate(240deg);"></div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .Pizza {
+            width: 500px;
+            height: 500px;
+            background-color: #0157a2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pizzaCircle {
+            width: 320px;
+            height: 320px;
+            border: 40px solid #fdeb00;
+            border-radius: 50%;
+            position: relative;
+        }
+        .line {
+            width: 30px;
+            height: 110%;
+            background-color: #fdeb00;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</body>
+</html>

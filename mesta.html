@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesta</title>
+</head>
+<body>
+
+    <div id="mesta-container"></div>
+
+    <script>
+        async function fetchMesta() {
+            const response = await fetch('http://127.0.0.1:8000/mesta');
+            const mesta = await response.json();
+            
+            const container = document.getElementById('mesta-container');
+
+            mesta.forEach(mesto => {
+                const mestoDiv = document.createElement('div');
+                mestoDiv.classList.add('mesto');
+
+                const mestoName = document.createElement('h2');
+                mestoName.textContent = mesto.mesto;
+
+                const mestoPopulation = document.createElement('p');
+                mestoPopulation.textContent = `Population: ${mesto.populacia}`;
+
+                mestoDiv.appendChild(mestoName);
+                mestoDiv.appendChild(mestoPopulation);
+                
+                container.appendChild(mestoDiv);
+            });
+        }
+
+        window.onload = fetchMesta;
+    </script>
+
+</body>
+</html>

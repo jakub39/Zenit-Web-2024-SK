@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananas</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .Ananas {
+            display: flex;
+            width: 500px;
+            height: 500px;
+            background-color: #ffa;
+            justify-content: center;
+        }
+        .list {
+            position: relative;
+            background-color: darkgreen;
+            width: 100px;
+            height: 100px;
+            top: 25%;
+            left: 10%;
+            border-radius: 90% 10% 90% 10%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+        .list1 {
+            transform: translate(-50%, -50%) rotate(90deg);
+            left: 22.5%;
+            top: 30%;
+            z-index: 10;
+        }
+        .list2 {
+            background-color: green;
+            z-index: 5;
+        }
+
+        .list3 {
+            transform: translate(-50%, -50%) rotate(0deg);
+            left: -2.5%;
+            top: 30%;
+            z-index: 10;
+        }
+        .kruh {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            width: 250px;
+            height: 310px;
+            background-color: orange;
+            z-index: 20;
+            border-radius: 40%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Ananas">
+            <div class="list list1"></div>
+            <div class="list list2"></div>
+            <div class="list list3"></div>
+        <div class="kruh"></div>
+    </div>
+
+</body>
+</html>
